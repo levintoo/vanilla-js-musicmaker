@@ -23,5 +23,9 @@ window.addEventListener('load', ()=> {
     });
 
     // make bubbles
+    const createBubbles = ()=>{
+        const bubble = document.createElement("div");
+        visual.appendChild(bubble);
+    }
 });
 
