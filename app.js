@@ -19,13 +19,17 @@ window.addEventListener('load', ()=> {
             sounds[index].currentTime = 0;
             sounds[index].play();
 
+
+            createBubbles(index);
         });
     });
 
     // make bubbles
-    const createBubbles = ()=>{
+    const createBubbles = (index)=>{
         const bubble = document.createElement("div");
         visual.appendChild(bubble);
+        bubble.style.backgroundColor = colors[index];
+        bubble.style.animation = 'jump 1s ease';
     }
 });
 
